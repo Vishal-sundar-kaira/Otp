@@ -1,0 +1,84 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.otp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    width: 25vw;
+    height: 60vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    gap: 10px;
+    display: flex;
+    width: 90%;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+.main h1{
+    font-family: "Gill Sans", sans-serif;}
+
+.otp-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    gap: 15px;
+}
+.otp-box input{
+    width: 6%;
+    height: 60%;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-family: "Gill Sans", sans-serif;
+
+}
+input:focus{
+    outline: none;
+    border: 3px solid #27ffa9;
+    box-shadow: 0 0 2px #27ffd76a;
+
+}
+button{
+    width: 70%;
+    height: 10%;
+    background-color: #27ffa9;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: "Gill Sans", sans-serif;
+    
+}
+button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.disabled{
+    opacity: 0.5;
+}
+h3{
+    font-family: "Gill Sans", sans-serif;
+}
+@media screen and (max-width: 700px) {
+    /* CSS rules for screens with width <= 700px */
+    .container{
+        width: 70vw;
+    }
+  }
